@@ -15,9 +15,6 @@ POSTGRES_KUBECONFIG="${CONFIG_DIR}/hub1"
 
 export ISBYO="true"
 
-# CleanUp globalhub
-bash "$CURRENT_DIR/e2e_clean_globalhub.sh"
-
 target_namespace=${TARGET_NAMESPACE:-"multicluster-global-hub"}
 
 ######################################### Generate Storage Secret ###################################################
